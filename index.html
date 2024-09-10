@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS5 Controller - Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="Img/logo.png" class="logo" alt="Company Logo">
+      <nav>
+        <ul id="menuList">
+          <li><a href="#connectivity">Connectivity</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#compatibility">Compatibility</a></li>
+          <li><a href="#color-options">Color Options</a></li>
+        </ul>
+      </nav>
+      <img src="Img/menu.png" class="menu-icon" onclick="togglemenu()" alt="Menu Icon">
+    </div>
+
+    <div class="row">
+      <div class="col-1">
+        <h2>PS5 V3<br>DualSense</h2>
+        <h3>Wireless Controller for PlayStation 5</h3>
+        <p>Dynamic adaptive triggers and a built-in microphone for next-gen gaming experiences.</p>
+        <h4>₹5,999</h4>
+        <button type="button">Buy Now <img src="Img/arrow.png" alt="Arrow Icon"></button>
+      </div>
+      <div class="col-2">
+        <img src="Img/controller.png" class="controller" alt="PS5 Controller">
+        <div class="color-box"></div>
+        <div class="add-btn">
+          <img src="Img/add.png" alt="Add Icon">
+          <p><small>Add to Cart</small></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <img src="Img/fb.png" alt="Facebook">
+      <img src="Img/tw.png" alt="Twitter">
+      <img src="Img/ig.png" alt="Instagram">
+    </div>
+  </div>
+  
+  <script>
+    var menuList = document.getElementById("menuList");
+
+    function togglemenu() {
+      if (menuList.style.maxHeight === "130px") {
+        menuList.style.maxHeight = "0px";
+      } else {
+        menuList.style.maxHeight = "130px";
+      }
+    }
+
+    menuList.style.maxHeight = "0px";
+  </script>
+</body>
+</html>
